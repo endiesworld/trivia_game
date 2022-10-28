@@ -43,7 +43,9 @@ const getPlayer = (id) => {
 
 // Get all players in the room
 const getAllPlayers = (room) => {
-    
+    let roomSize = players.filter(player => player.room === room)
+   
+    return roomSize ;
 };
 
 // Remove a player by id
